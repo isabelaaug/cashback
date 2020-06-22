@@ -96,7 +96,7 @@ class Compra(Resource):
         if dados['valor'] > 1500:
             percent_cashback = 20
             cashback = dados['valor'] * 0.2
-        elif dados['valor'] >= 1000:
+        elif dados['valor'] > 1000:
             percent_cashback = 15
             cashback = dados['valor'] * 0.15
         else:
